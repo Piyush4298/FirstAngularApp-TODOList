@@ -1,0 +1,8 @@
+<div class="container">
+    <h1 class="text-center mb-3">TODO List Angular Practice App</h1>
+    <app-todo-add (todoAdd)="addTodo($event)"></app-todo-add>
+    <h4>Your TODOs</h4>
+    <div *ngFor="let todo of todos; index as i">
+        <app-todo-item [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)" (todoCheckedBox)="toggleCheckTodo($event)"></app-todo-item>
+    </div>
+</div>
