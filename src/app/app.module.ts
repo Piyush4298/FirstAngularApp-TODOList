@@ -8,6 +8,7 @@ import { TodoAddComponent } from './MyComponents/todo-add/todo-add.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './MyComponents/about/about.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MathGameComponent } from './MyComponents/math-game/math-game.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
     TodoItemComponent,
     TodoAddComponent,
     AboutComponent,
+    MathGameComponent,
   ],
   imports: [
     BrowserModule,
